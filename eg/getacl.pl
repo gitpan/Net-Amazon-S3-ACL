@@ -11,8 +11,8 @@ die "getacl.pl <id> <secret> <bucket> <key>\n"
 
 my $s3 = Net::Amazon::S3->new(
    {
-      aws_access_key_id     => '1GBT9EGC1CRRYMZR0BG2',
-      aws_secret_access_key => 'l431bZgKewGUw09jS1BhPznI9FCFFV2OdX34aX/I',
+      aws_access_key_id     => $id,
+      aws_secret_access_key => $secret,
       retry                 => 1,
    }
 );

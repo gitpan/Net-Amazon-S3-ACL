@@ -2,7 +2,7 @@ package Net::Amazon::S3::ACL;
 
 use warnings;
 use strict;
-use version; our $VERSION = qv('0.0.1_00');
+use version; our $VERSION = qv('0.0.1_01');
 
 use Carp;
 use English qw( -no_match_vars );
