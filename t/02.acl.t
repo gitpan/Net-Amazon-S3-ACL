@@ -5,7 +5,7 @@ use warnings;
 use lib 't';
 use NAS3Test;
 
-use Test::More tests => 117; # last test to print
+use Test::More tests => 119; # last test to print
 use Data::Dumper;
 
 my $module = 'Net::Amazon::S3::ACL';
@@ -147,6 +147,12 @@ my $xml = NAS3Test::get_sample_acl();
          is($grants->{foo}->permissions()->[0], $main, "$main permission");
       }
    }
+
+   # Leave it in a predictable state
+  $acl->delete('foo');
+  ok(! $grants->{foo}, 'foo deleted (last time)');
+  $acl->add(foo => 'READ_ACP');
+  ok($grants->{foo}, 'foo re-added (last time)');
 
    my $xml_out = $acl->stringify();
    for my $regex (

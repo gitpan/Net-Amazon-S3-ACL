@@ -1,6 +1,6 @@
 ---
 name: Net-Amazon-S3-ACL
-version: 0.0.1_01
+version: 0.0.1_02
 author:
   - 'Flavio Poletti <flavio [at] polettix [dot] it>'
 abstract: work with Amazon S3 Access Control Lists
@@ -16,18 +16,15 @@ requires:
 provides:
   Net::Amazon::S3::ACL:
     file: lib/Net/Amazon/S3/ACL.pm
-    version: 0.0.1_01
+    version: 0.0.1_02
   Net::Amazon::S3::ACL::Grant:
     file: lib/Net/Amazon/S3/ACL/Grant.pm
   Net::Amazon::S3::ACL::Grant::Email:
     file: lib/Net/Amazon/S3/ACL/Grant/Email.pm
-    version: 0.0.1
   Net::Amazon::S3::ACL::Grant::ID:
     file: lib/Net/Amazon/S3/ACL/Grant/ID.pm
-    version: 0.0.1
   Net::Amazon::S3::ACL::Grant::URI:
     file: lib/Net/Amazon/S3/ACL/Grant/URI.pm
-    version: 0.0.1
   Net::Amazon::S3::ACL::XMLHelper:
     file: lib/Net/Amazon/S3/ACL/XMLHelper.pm
 generated_by: Module::Build version 0.2808

@@ -652,8 +652,8 @@ tipo di danno, di qualsiasi natura, possa derivarne.
 
 =head1 SEE ALSO
 
-=for l'autore, da riempire:
-   Una lista di moduli/link da considerare per completare le funzionalità
-   del modulo, o per trovarne di alternative.
+L<Net::Amazon::S3>, L<Net::Amazon::S3::ACL>,
+L<Net::Amazon::S3::ACL::Grant::ID>, L<Net::Amazon::S3::ACL::Grant::Email>,
+L<Net::Amazon::S3::ACL::Grant::URI>
 
 =cut

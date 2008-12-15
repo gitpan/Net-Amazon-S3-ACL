@@ -1,7 +1,5 @@
 package Net::Amazon::S3::ACL::Grant::URI;
 
-use version; our $VERSION = qv('0.0.1');
-
 use warnings;
 use strict;
 use Carp;
